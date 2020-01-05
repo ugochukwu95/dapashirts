@@ -1,0 +1,85 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(./fonts/Glamor/Glamor-Bold.ttf);
+}
+
+.header_font {
+  font-family: myFirstFont;
+}
+
+.primary_color {
+	background-color: #000;
+}
+
+.flex-container {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-moz-box-direction: normal;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-justify-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+.flex-item {
+	-webkit-box-flex: 0 0 20%;
+	-moz-box-flex: 0 0 20%;
+	-ms-flex: 0 0 20%;
+	-webkit-flex: 0 0 20%;
+	flex: 0 0 20%;
+	margin: 15px;
+}
+
+a.notification_icon {
+	position: relative;
+}
+a.notification_icon .custom_badge {
+	position: absolute;
+	 top: 10px;
+	 right: -1px;
+	 background: black;
+	 color: white !important;
+	 width: 20px !important;
+	 height: 20px !important;
+	 line-height: 20px !important;
+	 text-align: center;
+	 display: inline-block;
+	 font-size: .8em !important;
+	 font-weight: 500;
+	 border: none;
+	 outline: none;
+}
+
+.textsmall {
+	text-transform: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+	.flex-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.flex-item {
+		-webkit-box-flex: 0 0 45%;
+		-moz-box-flex: 0 0 45%;
+		-ms-flex: 0 0 45%;
+		-webkit-flex: 0 0 45%;
+		flex: 0 0 45%;
+		margin: 5px;
+	}
+	.featured_prod_text {
+		font-size: 1.8em;
+		font-weight: bold;
+	}
+}
