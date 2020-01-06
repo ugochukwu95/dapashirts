@@ -1,19 +1,19 @@
 import React, {Component} from "react";
 import {Switch, Route, Redirect} from "react-router-dom";
 import {connect} from "react-redux";
-import { loadData } from "../data/ActionCreators";
+import * as ShopActions from "../data/ActionCreators";
 import { DataTypes } from "../data/Types";
 import { Shop } from "./Shop";
-import { addToCart, updateCartQuantity, removeFromCart, clearCart } from "../data/CartActionCreators";
+import * as CartActions from "../data/CartActionCreators";
 import { CartDetails } from "./CartDetails";
+import { Checkout } from "./Checkout";
+import { Thanks } from "./Thanks";
 
 const mapStateToProps = (dataStore) => ({
 	...dataStore
 });
 
-const mapDispatchToProps = {
-	loadData, addToCart, updateCartQuantity, removeFromCart, clearCart
-}
+const mapDispatchToProps = { ...ShopActions, ...CartActions};
 
 const filterProducts = (products = [], url, routeprops) => {
 	let filteredProds;
@@ -42,6 +42,8 @@ export const ShopConnector = connect(mapStateToProps, mapDispatchToProps)(
 					<Shop { ...this.props } { ...routeProps } 
 					products={ filterProducts(this.props.products, routeProps.match.url, routeProps) } />} />
 				<Route exact={true} path="/cart" render={ (routeProps) => <CartDetails { ...this.props } { ...routeProps } />} />
+				<Route exact={true} path="/checkout" render={ routeProps => <Checkout { ...this.props } { ...routeProps } /> } />
+				<Route exact={true} path="/thanks" render={ routeProps => <Thanks { ...this.props } { ...routeProps } /> } />
 				<Redirect to="/" />
 			</Switch>
 		}

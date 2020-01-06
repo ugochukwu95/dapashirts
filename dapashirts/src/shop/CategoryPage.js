@@ -11,12 +11,14 @@ export class CategoryPage extends Component {
 		return <React.Fragment>
 			<div className="row">
 				<div className="col s12">
+					<div className="container">
 					<h5 className="center header_font grey-text text-darken-2">
 						{(Array.isArray(this.props.categories) && this.props.match.params.id !== undefined) ? this.props.categories.find((obj) => obj._id === this.props.match.params.id).name : ""}
 					</h5>
 					<p className="grey-text text-darken-2">
 						{(Array.isArray(this.props.categories) && this.props.match.params.id !== undefined) ? this.props.categories.find((obj) => obj._id === this.props.match.params.id).description : ""}
 					</p>
+					</div>
 				</div>
 			</div>
 			<div className="row">

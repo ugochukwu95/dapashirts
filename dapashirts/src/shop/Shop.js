@@ -24,6 +24,9 @@ export class Shop extends Component {
 			comp = <ProductDetails {...this.props} />
 		}
 
+		let today = new Date();
+		let yyyy = today.getFullYear();
+
 		return <React.Fragment>
 			<header>
 				<div className="navbar-fixed">
@@ -49,6 +52,33 @@ export class Shop extends Component {
 			<main>
 				{comp}
 			</main>
+			<footer className="page-footer grey lighten-5 grey-text text-darken-2">
+				<div className="container">
+					<div className="row">
+						<div className="col l6 s12">
+							<h5><strong>Built by Ugochukwu Oguejiofor</strong></h5>
+							<p><img src={require(`../images/images/FSce6xqz_400x400.jpg`)} alt="Ugo Oguejiofor" 
+							height="100" width="100" /></p>
+							<p>Developed using Reactjs, Nodejs, MongoDb, Redux, Axios, Express, HTML5, 
+								CSS3, and the MaterializeCSS Framework</p>
+						</div>
+						<div className="col l4 offset-l2 s12">
+                			<h5><strong>Find Me</strong></h5>
+                			<ul>
+                				<li><a rel="noopener noreferrer" href="https://github.com/ugochukwu95" target="_blank" className="btn black white-text waves-effect waves-light">GitHub</a>
+                				&nbsp; <a rel="noopener noreferrer" href="https://twitter.com/thisis_ugo" target="_blank" className="btn black white-text waves-effect waves-light">Twitter</a></li>
+                				<li><br /></li>
+                				<li>Product Images gotten from: <a rel="noopener noreferrer" className="pink-text" href="https://github.com/apress/beg-php-mysql-e-commerce" target="_blank"><u>Here</u></a></li>
+                			</ul>
+                		</div>
+					</div>
+				</div>
+				<div className="footer-copyright">
+            		<div className="container grey-text text-darken-2">
+            			© {yyyy} Copyright
+		            </div>
+		        </div>
+			</footer>
 		</React.Fragment>
 	}
 }

@@ -12,7 +12,8 @@ export class CartSummary extends Component {
 	}
 
 	getLinkClasses = () => {
-		return `notification_icon grey-text text-darken-3 ${ this.props.cartItems === 0 ? "disabled": ""}`;
+		return `notification_icon btn-flat grey-text text-darken-3 
+			${ (this.props.cartItems === 0 || this.props.cartItems === undefined) ? "disabled": ""}`;
 	}
 
 	render() {

@@ -11,11 +11,11 @@ export class FrontPage extends Component {
 			<div className="slider">
 				<ul className="slides">
 					<li>
-						<img src={require(`../images/images/women-curvy-ian-reyes-woman-wallpaper.jpg`)} 
+						<img src={require(`../images/images/0659f67a-83d7-453e-af11-b35ce1e5f08e.jpg`)} 
 							alt="Homepage promo" />
 						<div className="caption left-align">
-	    					<h3 className="white-text">Get only the best printed shirts</h3>
-	    					<h6 className="light white-text text-lighten-3">Designed with Reactjs, MongoDB, Nodejs, ...</h6>
+	    					<h3 className="white-text"><b>Get only the best printed shirts</b></h3>
+	    					<h6 className="white-text text-lighten-3"><b>Designed with Reactjs, MongoDB, Nodejs, ...</b></h6>
 	     				</div>
 					</li>
 				</ul>

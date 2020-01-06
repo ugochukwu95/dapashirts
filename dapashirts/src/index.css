@@ -3,6 +3,16 @@
   src: url(./fonts/Glamor/Glamor-Bold.ttf);
 }
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
 .header_font {
   font-family: myFirstFont;
 }
@@ -41,12 +51,12 @@
 }
 
 a.notification_icon {
-	position: relative;
+	position: relative !important;
 }
 a.notification_icon .custom_badge {
-	position: absolute;
-	 top: 10px;
-	 right: -1px;
+	position: absolute !important;
+	 top: 10px !important;
+	 right: -1px !important;
 	 background: black;
 	 color: white !important;
 	 width: 20px !important;

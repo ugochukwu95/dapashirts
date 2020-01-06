@@ -27,8 +27,8 @@ export class ProductDetails extends Component {
 							alt={`${this.props.products.name} print`} />
 						</div>
 						<br/>
-						<h5 className="grey-text text-darken-2 flow-text"><strong>Price: 
-							${((this.props.products.discounted_price !== 0) && (this.props.products.discounted_price < this.props.products.price)) ? this.props.products.discounted_price : this.props.products.price}</strong></h5>
+						<h5 className="grey-text text-darken-2 flow-text center"><strong>Price: 
+							${((this.props.products.discounted_price !== 0) && (this.props.products.discounted_price < this.props.products.price)) ? this.props.products.discounted_price.toFixed(2) : this.props.products.price.toFixed(2)}</strong></h5>
 					</div>
 					<div className="col l8 m8 s12">
 						<p className="grey-text text-darken-2 flow-text">{this.props.products.description}</p>

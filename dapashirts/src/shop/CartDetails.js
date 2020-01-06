@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import { CartDetailsRows } from "./CartDetailsRows";
 
 export class CartDetails extends Component {
-	getLinkClasses = () => `btn textsmall green lighten-1 white-text ${this.props.cartItems === 0 ? "disabled": ""}`;
+	getLinkClasses = () => `btn textsmall green lighten-1 white-text ${(this.props.cartItems === 0) ? 
+		"disabled": ""}`;
 	
 	render() {
 		return <React.Fragment>
 			<div className="row">
 				<div className="col s10 offset-s1">
-					<h4 class="center header_font grey-text text-darken-2">Your Cart</h4>
+					<h4 className="center header_font grey-text text-darken-2">Your Cart</h4>
 				</div>
 			</div>
 			<div className="row">
@@ -40,5 +41,11 @@ export class CartDetails extends Component {
 				</div>
 			</div>
 		</React.Fragment>
+	}
+
+	componentDidMount() {
+		if (this.props.cartItems === undefined || this.props.cartItems === 0) {
+			this.props.history.push("/");
+		}
 	}
 }

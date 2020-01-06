@@ -42,7 +42,7 @@ export class ProductList extends Component {
 						<div className="card-content grey-text text-darken-2 center">
 							<p><strong>{p.name}</strong></p>
 							<br />
-							<p>${((p.discounted_price !== 0) && (p.discounted_price < p.price)) ? p.discounted_price : p.price}</p>
+							<p>${((p.discounted_price !== 0) && (p.discounted_price < p.price)) ? p.discounted_price.toFixed(2) : p.price.toFixed(2)}</p>
 						</div>
 					</div>
 				</div>

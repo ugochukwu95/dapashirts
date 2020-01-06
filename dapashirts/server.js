@@ -28,6 +28,7 @@ mongoose.connect(dbConfig.url, {
 require('./routes/department.routes.js')(app);
 require('./routes/category.routes.js')(app);
 require('./routes/product.routes.js')(app);
+require('./routes/order.routes.js')(app);
 
 app.listen(3500, () => {
     console.log("Server is listening on port 3500");
