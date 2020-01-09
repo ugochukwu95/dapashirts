@@ -1,11 +1,12 @@
 import {DataTypes} from "./Types";
 
-const protocol = "http";
-const hostname = "localhost";
-const port = 3500;
+//const protocol = "http";
+//const hostname = "localhost"; 
+//const hostname = "ugo-dapashirts.appspot.com";
+//const port = process.env.PORT || 80;
 
 export const RestUrls = {
-	[DataTypes.PRODUCTS]: `${protocol}://${hostname}:${port}/products`,
-	[DataTypes.CATEGORIES]: `${protocol}://${hostname}:${port}/categories`,
-	[DataTypes.ORDERS]: `${protocol}://${hostname}:${port}/orders`
+	[DataTypes.PRODUCTS]: `/api/products`,
+	[DataTypes.CATEGORIES]: `/api/categories`,
+	[DataTypes.ORDERS]: `/api/orders`
 }

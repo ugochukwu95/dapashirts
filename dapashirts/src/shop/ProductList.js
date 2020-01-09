@@ -20,8 +20,48 @@ export class ProductList extends Component {
 	render() {
 		if (this.props.products == null || this.props.products.length === 0) {
 			return <div className="row">
-				<div className="col l8 offset-l2 m8 offset-m2 s10 offset-s1">
-					<h5 className="grey-text text-darken-2">:-( No products</h5>
+				<div className="col s6 offset-s3 center">
+					<div class="preloader-wrapper small center active">
+				      <div class="spinner-layer spinner-blue">
+				        <div class="circle-clipper left">
+				          <div class="circle"></div>
+				        </div><div class="gap-patch">
+				          <div class="circle"></div>
+				        </div><div class="circle-clipper right">
+				          <div class="circle"></div>
+				        </div>
+				      </div>
+
+				      <div class="spinner-layer spinner-red">
+				        <div class="circle-clipper left">
+				          <div class="circle"></div>
+				        </div><div class="gap-patch">
+				          <div class="circle"></div>
+				        </div><div class="circle-clipper right">
+				          <div class="circle"></div>
+				        </div>
+				      </div>
+
+				      <div class="spinner-layer spinner-yellow">
+				        <div class="circle-clipper left">
+				          <div class="circle"></div>
+				        </div><div class="gap-patch">
+				          <div class="circle"></div>
+				        </div><div class="circle-clipper right">
+				          <div class="circle"></div>
+				        </div>
+				      </div>
+
+				      <div class="spinner-layer spinner-green">
+				        <div class="circle-clipper left">
+				          <div class="circle"></div>
+				        </div><div class="gap-patch">
+				          <div class="circle"></div>
+				        </div><div class="circle-clipper right">
+				          <div class="circle"></div>
+				        </div>
+				      </div>
+				    </div>
 				</div>
 			</div>
 		}

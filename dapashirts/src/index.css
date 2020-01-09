@@ -74,6 +74,14 @@ a.notification_icon .custom_badge {
 	text-transform: none !important;
 }
 
+@media only screen and (max-width: 1030px) {
+	.brand-logo {
+		left: 0 !important;
+		font-size: 1rem !important;
+	}
+}
+
+
 @media only screen and (max-width: 600px) {
 	.flex-container {
 		display: flex;
@@ -91,5 +99,16 @@ a.notification_icon .custom_badge {
 	.featured_prod_text {
 		font-size: 1.8em;
 		font-weight: bold;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.brand-logo {
+		left: 0 !important;
+		font-size: 1.5rem !important;
+	}
+
+	.caption h3 {
+		font-size: 2.5em !important;
 	}
 }

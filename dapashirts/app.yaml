@@ -1,0 +1,13 @@
+runtime: nodejs10
+handlers: 
+- url: /api/.*
+  script: auto
+- url: /(.*\..+)$
+  static_files: build/\1
+  upload: build/(.*\..+)$
+- url: /.*
+  static_files: build/index.html
+  upload: build/index.html
+network:
+  forwarded_ports:
+    - 9090/tcp

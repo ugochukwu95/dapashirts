@@ -32,7 +32,7 @@ export class Shop extends Component {
 				<div className="navbar-fixed">
 					<nav className="white grey-text text-darken-2">
 		    			<div className="nav-wrapper container">
-		    				<Link to="/" className="brand-logo header_font black-text left">Ugo Oguejiofor.</Link>
+		    				<Link to="/" className="brand-logo header_font black-text left">DapaShirts.</Link>
 		    				<Link to="#!" data-target="mobile-demo" className="right black-text sidenav-trigger">
 		    					<i className="material-icons">menu</i>
 		    				</Link>

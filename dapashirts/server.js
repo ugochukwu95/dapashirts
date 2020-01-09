@@ -1,10 +1,16 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require("cors");
+const port = process.argv[3] || 3500;
+const history = require("connect-history-api-fallback");
+
 
 const app = express();
 
-app.use(cors());
+app.use(history());
+app.use("/", express.static("./build"));
+
+app.use(cors({origin: true, credentials: true}));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
@@ -30,6 +36,7 @@ require('./routes/category.routes.js')(app);
 require('./routes/product.routes.js')(app);
 require('./routes/order.routes.js')(app);
 
-app.listen(3500, () => {
-    console.log("Server is listening on port 3500");
+
+app.listen(port, () => {
+    console.log(`Server is listening on port ${port}`);
 });

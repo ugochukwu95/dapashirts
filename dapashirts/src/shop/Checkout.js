@@ -28,7 +28,7 @@ export class Checkout extends Component {
 		return <div className="container">
 			<div className="row">
 				<div className="col s12">
-					<h5 className="header_font center">Ugo Oguejiofor.</h5>
+					<h5 className="header_font center">DapaShirts.</h5>
 				</div>
 			</div>
 			<div className="row">

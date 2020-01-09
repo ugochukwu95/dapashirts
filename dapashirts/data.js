@@ -1,4 +1,5 @@
-export const data = {
+module.exports = function () {
+return {
 	departments: [
 	    {
 	        "_id": "5e103a0ae4cb7528685a9346",
@@ -186,7 +187,7 @@ export const data = {
 	            "5e103ccde4cb7528685a9349"
 	        ],
 	        "discounted_price": 0,
-	        "display": 3,
+	        "display": 0,
 	        "_id": "5e1048b7d962690a8c736646",
 	        "name": "Corsica",
 	        "description": "Borrowed from Spain, the \"Moor's head\" may have celebrated the Christians' victory over the Moslems in that country.",
@@ -336,7 +337,7 @@ export const data = {
 	            "5e103e87f4414312a4e4179d"
 	        ],
 	        "discounted_price": 0,
-	        "display": 1,
+	        "display": 0,
 	        "_id": "5e104d2f4d34f62398a88afb",
 	        "name": "Espresso",
 	        "description": "The winged foot of Mercury speeds the Special Delivery mail to its destination. In a hurry? This T-shirt is for you!",
@@ -366,7 +367,7 @@ export const data = {
 	            "5e103e87f4414312a4e4179d"
 	        ],
 	        "discounted_price": 17,
-	        "display": 1,
+	        "display": 0,
 	        "_id": "5e104de84d34f62398a88afd",
 	        "name": "Italian Airmail",
 	        "description": "Thanks to modern Italian post, folks were able to reach out and touch each other. Or at least so implies this image. This is a very fast and friendly T-shirt--you'll make friends with it!",
@@ -486,7 +487,7 @@ export const data = {
 	            "5e103ef3f4414312a4e4179e"
 	        ],
 	        "discounted_price": 0,
-	        "display": 1,
+	        "display": 0,
 	        "_id": "5e10521f4d34f62398a88b05",
 	        "name": "Sword of Light",
 	        "description": "This was the very first Irish postage stamp, and what a beautiful and cool T-shirt it makes for the Irish person in your life!",
@@ -591,7 +592,7 @@ export const data = {
 	            "5e103f55f4414312a4e4179f"
 	        ],
 	        "discounted_price": 0,
-	        "display": 1,
+	        "display": 0,
 	        "_id": "5e1055924d34f62398a88b0c",
 	        "name": "Canada Goose",
 	        "description": "Being on a major flyway for these guys, we know all about these majestic birds. They hang out in large numbers on a lake near our house and fly over constantly. Remember what Frankie Lane said? \"I want to go where the wild goose goes!\" And when you go, wear this cool Canada goose animal T-shirt.",
@@ -831,7 +832,7 @@ export const data = {
 	            "5e103f9cf4414312a4e417a0"
 	        ],
 	        "discounted_price": 14.95,
-	        "display": 3,
+	        "display": 2,
 	        "_id": "5e105f124d34f62398a88b1c",
 	        "name": "Albania Flower",
 	        "description": "Well, these crab apples started out as flowers, so that's close enough for us! They still make for a uniquely beautiful T-shirt.",
@@ -1057,7 +1058,7 @@ export const data = {
 	            "5e104003f4414312a4e417a1"
 	        ],
 	        "discounted_price": 18.5,
-	        "display": 3,
+	        "display": 2,
 	        "_id": "5e1064eb4d34f62398a88b2b",
 	        "name": "Altar Piece",
 	        "description": "This beautiful angel Christmas T-shirt is awaiting the opportunity to adorn your chest!",
@@ -1239,7 +1240,7 @@ export const data = {
 	            "5e103f55f4414312a4e4179f"
 	        ],
 	        "discounted_price": 0,
-	        "display": 3,
+	        "display": 0,
 	        "_id": "5e10699a4d34f62398a88b37",
 	        "name": "Kat Over New Moon",
 	        "description": "Love making you feel lighthearted?",
@@ -1296,4 +1297,5 @@ export const data = {
 	    }
 	],
 	orders: []
+}
 }
