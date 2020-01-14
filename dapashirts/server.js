@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require("cors");
-const port = process.argv[3] || 3500;
+const port = process.env.PORT || 3500;
 const history = require("connect-history-api-fallback");
 
 
